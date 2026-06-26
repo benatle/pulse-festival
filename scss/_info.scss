@@ -1,0 +1,97 @@
+#info {
+  padding: 80px 80px 0;
+}
+
+.info-container {
+  min-height: calc(100vh - 80px);
+  color: white;
+  padding: 60px;
+}
+
+.info-titre {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-titre .title-star {
+  color: white;
+}
+
+.info-titre h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.info-deroulant {
+  max-width: 900px;
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.info-carte {
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+
+.info-carte summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 24px 30px;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-carte summary::after {
+  content: "+";
+  font-size: 32px;
+}
+
+.info-carte[open] summary::after {
+  content: "-";
+}
+
+.info-contenu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 30px;
+  transition: max-height 0.4s, opacity 0.3s, padding-bottom 0.3s;
+}
+
+.info-carte[open] .info-contenu {
+  max-height: 250px;
+  opacity: 1;
+  padding-bottom: 30px;
+}
+
+.info-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.info-action {
+  padding: 12px 22px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 0.5px solid transparent;
+  font-size: 18px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.info-action:hover {
+  background-color: transparent;
+  border-color: black;
+  color: black;
+}
