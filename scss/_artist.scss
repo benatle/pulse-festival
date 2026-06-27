@@ -1,0 +1,70 @@
+#artist-page {
+  min-height: 100vh;
+  background-image: url("../assets/images/background_page.webp");
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: repeat-y;
+  color: white;
+  padding: 140px 80px 100px;
+}
+
+.artist-page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  background-color: #050505;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.artist-page-container img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.artist-page-texte {
+  text-align: center;
+}
+
+.artist-page-texte p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.artist-page-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.artist-page-bouton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 20px;
+  border-radius: 999px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: 0.5px solid transparent;
+  font-size: 15px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.artist-page-bouton:hover {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.artist-page-actions .tickets-retour {
+  margin-top: 0;
+  padding: 9px 20px;
+  font-size: 15px;
+}

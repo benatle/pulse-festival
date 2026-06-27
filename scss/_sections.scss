@@ -1,5 +1,5 @@
 #lineup, #experience, #info {
-  background-image: url("../assets/images/background_page.png");
+  background-image: url("../assets/images/background_page.webp");
   background-size: 100% auto;
   background-position: top center;
   background-repeat: repeat-y;
@@ -11,4 +11,12 @@
   font-size: 40px;
   line-height: 1;
   color: black;
+}
+
+.page-logo-top {
+  position: absolute;
+  top: 95px;
+  left: 80px;
+  width: 130px;
+  z-index: 2;
 }

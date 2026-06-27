@@ -1,21 +1,82 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Réservez votre pass pour le Pulse Festival à Enghien : pass 1 jour, pass week-end et pass VIP.">
+    <meta name="author" content="Benat Léo">
+
+    <meta property="og:title" content="Pulse Festival | Tickets">
+    <meta property="og:description" content="Choisissez votre pass pour vivre l’expérience Pulse Festival les 18 et 19 juillet 2026 à Enghien.">
+    <meta property="og:image" content="https://benatleopulsefestival.fr/assets/images/logo_pulsefestival.png">
+    <meta property="og:url" content="https://benatleopulsefestival.fr/tickets.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="assets/images/logo_pulsefestival.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=2">
+
     <title>Pulse Festival | Tickets</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo">
+                <img src="assets/images/logo_pulsefestival.png" alt="Logo Pulse Festival">
+            </a>
 
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#lineup">Line-Up</a></li>
+                    <li><a href="index.html#experience">Expérience</a></li>
+                    <li><a href="index.html#info">Info</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="tickets.html" class="ticket-lien">Tickets</a></li>
+                </ul>
+            </nav>
+            <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
+    <img src="assets/images/logo_pulsefestival_cut.png" alt="Logo Pulse Festival" class="page-logo-top">
     <main id="tickets">
         <section class="tickets-container">
-            <h1>Tickets</h1>
-            <p>La billetterie du Pulse Festival sera bientôt disponible.</p>
+            <div class="tickets-intro">
+                <span class="title-star">✶</span>
+                <h1>Tickets</h1>
+                <span class="title-star">✶</span>
+            </div>
+
+            <p class="tickets-texte">
+                Choisis ton pass pour vivre l’expérience Pulse Festival les 18 et 19 juillet 2026 à Enghien.
+            </p>
+
+            <div class="tickets-liste">
+                <article class="ticket-carte">
+                    <h2>Pass 1 Jour</h2>
+                    <p class="ticket-description">Accès au festival pour une journée.</p>
+                    <p class="ticket-prix">49€</p>
+                    <a href="index.html#contact" class="ticket-bouton">Réserver</a>
+                </article>
+
+                <article class="ticket-carte ticket-carte-principale">
+                    <h2>Pass Week-End</h2>
+                    <p class="ticket-description">Accès complet aux deux jours du festival.</p>
+                    <p class="ticket-prix">89€</p>
+                    <a href="index.html#contact" class="ticket-bouton">Réserver</a>
+                </article>
+
+                <article class="ticket-carte">
+                    <h2>Pass VIP</h2>
+                    <p class="ticket-description">Accès premium, zones dédiées et expérience améliorée.</p>
+                    <p class="ticket-prix">149€</p>
+                    <a href="index.html#contact" class="ticket-bouton">Réserver</a>
+                </article>
+            </div>
+
             <a href="index.html" class="tickets-retour">Retour à l’accueil</a>
         </section>
     </main>

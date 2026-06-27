@@ -78,9 +78,9 @@
   transition: filter 0.3s;
 }
 
-.artist-ecoute {
+.artist-ecoute,
+.artist-details {
   position: absolute;
-  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -90,19 +90,35 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
-  transition: opacity 0.3s, background-color 0.3s, border-color 0.3s;
   border: 0.5px solid transparent;
+  transition: opacity 0.3s, background-color 0.3s, border-color 0.3s, color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.artist-ecoute {
+  left: calc(50% - 65px);
+}
+
+.artist-details {
+  left: calc(50% + 65px);
 }
 
 .artist-visuel:hover img {
   filter: brightness(0.45);
 }
 
-.artist-visuel:hover .artist-ecoute {
+.artist-visuel:hover .artist-ecoute,
+.artist-visuel:hover .artist-details {
   opacity: 1;
 }
 
-.artist-ecoute:hover {
-  border-color: white;
+.artist-ecoute:hover,
+.artist-details:hover {
   background-color: transparent;
+  border-color: white;
+  color: white;
 }
